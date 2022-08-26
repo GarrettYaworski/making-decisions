@@ -1,34 +1,61 @@
 ////////// PROBLEM 1 //////////
 /*
-  Create a variable called 'lovesCode' and set it equal to true. 
+  Create a letiable called 'lovesCode' and set it equal to true. 
   Check to see if 'lovesCode' is equal to true or false. 
   If it is true, console log "I love to code!"
   If it is not, console log "Coding has its challenges."
 */
 
 //CODE HERE
+let lovesCode = true;
+if(lovesCode === true){
+  console.log('i love to code')
+} else if (lovesCode == false) {
+  console.log('coding has its challenges')
+}
+
+// let lovesCode = true;
+// if(lovesCode){
+//   console.log('i love to code')
+// } else {
+//   console.log('coding has its challenges')
+// }
+
 
 // For problems 2-3 use the following lines of code:
-var amysAge = 29;
-var brittanisAge = 34;
-var amysBirthYear = 1991;
-var brittanisBirthYear = 1986;
+let amysAge = 29;
+let brittanisAge = 34;
 
 ////////// PROBLEM 2 //////////
 
 /*
-  Using an if statement and a comparison operator, create code that will check if Amy or Brittani is older, and then console.log '{name} is older'. Hint: Consider what will happen if they are the same age. Handle this situation.
+Using an if statement and a comparison operator,
+create code that will check if Amy or Brittani is older,
+and then console.log '{name} is older'.
+Hint: Consider what will happen if they are the same age. Handle this situation.
 */
 
-//CODE HERE
+if(amysAge > brittanisAge){
+  console.log('Amy is older')
+} else if (amysAge < brittanisAge) {
+  console.log('Brittani is older')
+} else {
+  console.log('they are the same age');
+}
 
 ////////// PROBLEM 3 //////////
 
 /*
-  Using an if statement and a comparison operator, create code that will check if Amy and Brittani were born in the same year. If they were, console.log 'Amy & Brittani were born in the same year'. If they were not, console.log 'Amy & Brittani were not born in the same year'
+Using an if statement and a comparison operator, create code that will check if Amy and Brittani were born in the same year. If they were, console.log 'Amy & Brittani were born in the same year'. If they were not, console.log 'Amy & Brittani were not born in the same year'
 */
+let amysBirthYear = 1991;
+let brittanisBirthYear = 1986;
 
-//CODE HERE
+if(amysBirthYear === brittanisBirthYear){
+  console.log('Amy & Brittani were born in the same year');
+} else {
+  console.log('Amy & Brittani were not born in the same year');
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -47,8 +74,22 @@ let rain = true;
 /*
   Create a for-loop that runs 10 times, and on each iteration logs the word 'hello'.
 */
-
-//CODE HERE
+// const tenArr = [1,2,3,4,5,6,7,8,9,10]
+const helloArr = [
+  'hello1',
+  'hello2',
+  'hello3',
+  'hello4',
+  'hello5',
+  'hello6',
+  'hello7',
+  'hello8',
+  'hello9',
+  'hello10',
+]
+for(let i = 0; i < helloArr.length; i++){
+  console.log(helloArr[i])
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -73,7 +114,7 @@ let score = 0;
 let passingScore = 7;
 
 /*
-  Create a while-loop that logs "Your score is not high enough" while the score variable above is below passingScore. In each iteration of the loop, increase the score by one. If your code is successful, you will see your logged statement 7 times.
+  Create a while-loop that logs "Your score is not high enough" while the score letiable above is below passingScore. In each iteration of the loop, increase the score by one. If your code is successful, you will see your logged statement 7 times.
 */
 
 //CODE HERE
@@ -82,7 +123,7 @@ let passingScore = 7;
 
 ////////// PROBLEM 9 //////////
 /*
-  Create a variable called 'changeMyMind' and set it equal to true. 
+  Create a letiable called 'changeMyMind' and set it equal to true. 
   Check to see if changeMyMind is set to true or false, if it is true, change the status to false, if it is false, change the status to true.
 
 */
@@ -99,6 +140,15 @@ let passingScore = 7;
 ////////// PROBLEM 11 //////////
 
 let z = 5;
-// Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
+// Create a while loop that continues to run while z is greater than 0. 
+//Within the while loop, log a countdown from the value of z to 1.
+//Once you have logged the countdown, make sure you decrement z by 1.
+//If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
 //CODE HERE
+while(z > 0){
+  for(let i = z; i > 0; i--){
+    console.log(i)
+  }
+  z--;
+}
